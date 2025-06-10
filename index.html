@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历 - 赵晟羽</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+        
+        .resume-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #3498db;
+            margin-bottom: 10px;
+            border-left: 4px solid #3498db;
+            padding-left: 10px;
+        }
+        
+        .basic-info {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: center;
+        }
+        
+        .info-label {
+            font-weight: bold;
+            margin-right: 5px;
+            min-width: 60px;
+        }
+        
+        .info-content {
+            flex: 1;
+        }
+        
+        .photo-container {
+            grid-column: 4;
+            grid-row: 1 / span 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .photo {
+            width: 100px;
+            height: 120px;
+            object-fit: cover;
+            border: 1px solid #ddd;
+        }
+        
+        /* 其他样式保持不变 */
+        .job-intention {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+        
+        .skills-certificates, .hobbies, .projects, .self-evaluation {
+            line-height: 1.6;
+        }
+        
+        .projects ul, .skills-certificates ul {
+            padding-left: 20px;
+        }
+        
+        .projects li, .skills-certificates li {
+            margin-bottom: 8px;
+        }
+        
+        @media (max-width: 600px) {
+            .basic-info {
+                grid-template-columns: 1fr;
+            }
+            
+            .photo-container {
+                grid-column: 1;
+                grid-row: auto;
+                justify-content: flex-start;
+                margin-top: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <div class="resume-title">个人简历</div>
+        
+        <div class="section">
+            <div class="basic-info">
+                <div class="info-item">
+                    <span class="info-label">姓名：</span>
+                    <span class="info-content">赵晟羽</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">性别：</span>
+                    <span class="info-content">男</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">年龄：</span>
+                    <span class="info-content">20</span>
+                </div>
+                
+                <div class="photo-container">
+                    <img src="src/5438afca945c968483bcf4adefc22a00_720.jpg" alt="照片" class="photo" alt="照片" class="photo">
+                </div>
+                
+                <div class="info-item">
+                    <span class="info-label">籍贯：</span>
+                    <span class="info-content">吉林</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">联系电话：</span>
+                    <span class="info-content">18628777989</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">电子邮箱：</span>
+                    <span class="info-content">1907970777@qq.com</span>
+                </div>
+                
+                <div class="info-item">
+                    <span class="info-label">学历：</span>
+                    <span class="info-content">本科</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">健康状况：</span>
+                    <span class="info-content">良好</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">婚姻状况：</span>
+                    <span class="info-content">未婚</span>
+                </div>
+            </div>
+        </div>
+      <div class="section">
+            <div class="section-title">求职意向</div>
+            <div class="job-intention">
+                <div class="info-item">
+                    <span class="info-label">求职意向：</span>
+                    <span class="info-content">qt开发工程师</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">专业：</span>
+                    <span class="info-content">软件工程</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">毕业院校：</span>
+                    <span class="info-content">鲁东大学</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">技能证书</div>
+            <div class="skills-certificates">
+                <ul>
+                    <li>熟练掌握HTML, CSS, JavaScript</li>
+                    <li>熟悉Vue, React等前端框架</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">个人特长与爱好</div>
+            <div class="hobbies">
+                <p>擅长团队协作，具有良好的沟通能力；热爱编程，喜欢研究新技术；业余时间喜欢阅读、运动和旅行。</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">项目经历</div>
+            <div class="projects">
+                <ul>
+                    
+                    <li><strong>个人博客系统</strong> (2023.09-2024.05)：独立开发全栈项目，前端使用Vue，后端使用go。</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">自我评价</div>
+            <div class="self-evaluation">
+                <p>本人工作认真负责，学习能力强，能够快速适应新环境和新挑战。具有良好的团队合作精神和沟通能力，能够承受工作压力。对前端技术有浓厚兴趣，持续关注行业动态，不断提升自己的技术水平。</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
